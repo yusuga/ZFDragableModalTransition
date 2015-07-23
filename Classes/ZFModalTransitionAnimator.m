@@ -120,16 +120,14 @@
         if (toViewController.modalPresentationStyle == UIModalPresentationCustom) {
             [fromViewController beginAppearanceTransition:NO animated:YES];
         }
-
         [UIView animateWithDuration:[self transitionDuration:transitionContext]
-                              delay:0
-             usingSpringWithDamping:0.8
-              initialSpringVelocity:0.1
+                              delay:0.
+             usingSpringWithDamping:1.
+              initialSpringVelocity:0.
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              fromViewController.view.transform = CGAffineTransformScale(fromViewController.view.transform, self.behindViewScale, self.behindViewScale);
                              fromViewController.view.alpha = self.behindViewAlpha;
-
                              toViewController.view.frame = CGRectMake(0,0,
                                                                       CGRectGetWidth(toViewController.view.frame),
                                                                       CGRectGetHeight(toViewController.view.frame));
@@ -180,9 +178,9 @@
         }
 
         [UIView animateWithDuration:[self transitionDuration:transitionContext]
-                              delay:0
-             usingSpringWithDamping:0.8
-              initialSpringVelocity:0.1
+                              delay:0.
+             usingSpringWithDamping:1.
+              initialSpringVelocity:0.
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              CGFloat scaleBack = (1 / self.behindViewScale);
@@ -360,9 +358,9 @@
     }
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
-                          delay:0
-         usingSpringWithDamping:0.8
-          initialSpringVelocity:0.1
+                          delay:0.
+         usingSpringWithDamping:1.
+          initialSpringVelocity:0.
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          CGFloat scaleBack = (1 / self.behindViewScale);
@@ -383,11 +381,11 @@
 
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-
-    [UIView animateWithDuration:0.4
-                          delay:0
-         usingSpringWithDamping:0.8
-          initialSpringVelocity:0.1
+    
+    [UIView animateWithDuration:[self transitionDuration:transitionContext]
+                          delay:0.
+         usingSpringWithDamping:1.
+          initialSpringVelocity:0.
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          toViewController.view.layer.transform = self.tempTransform;
