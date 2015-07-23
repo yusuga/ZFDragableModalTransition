@@ -30,6 +30,8 @@
         _behindViewScale = 0.9f;
         _behindViewAlpha = 1.0f;
         _transitionDuration = 0.8f;
+        
+        _gesture = [[ZFDetectScrollViewEndGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
 
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -50,14 +52,11 @@
 {
     _dragable = dragable;
     if (_dragable) {
-        self.gesture = [[ZFDetectScrollViewEndGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
         self.gesture.delegate = self;
         [self.modalController.view addGestureRecognizer:self.gesture];
     } else {
-        if (self.gesture) {
-            [self.modalController.view removeGestureRecognizer:self.gesture];
-            self.gesture = nil;
-        }
+        [self.modalController.view removeGestureRecognizer:self.gesture];
+        self.gesture.delegate = nil;
     }
 }
 
