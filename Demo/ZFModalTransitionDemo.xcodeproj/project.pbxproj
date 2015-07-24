@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8CF83FA1B6118E600D277A1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83F91B6118E600D277A1 /* TableViewController.m */; };
+		B8CF83FD1B612DC100D277A1 /* ModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83FC1B612DC100D277A1 /* ModalTableViewController.m */; };
+		B8CF84001B61321D00D277A1 /* StatusBarHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */; };
+		B8CF84031B6135A200D277A1 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF84021B6135A200D277A1 /* NavigationController.m */; };
 		DC15A4F2193F710800D293CE /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC15A4F1193F710800D293CE /* ModalViewController.m */; };
 		DCAD9954193F6E7300F0F385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAD9953193F6E7300F0F385 /* Foundation.framework */; };
 		DCAD9956193F6E7300F0F385 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAD9955193F6E7300F0F385 /* CoreGraphics.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8CF83F81B6118E600D277A1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B8CF83F91B6118E600D277A1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B8CF83FB1B612DC100D277A1 /* ModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTableViewController.h; sourceTree = "<group>"; };
+		B8CF83FC1B612DC100D277A1 /* ModalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTableViewController.m; sourceTree = "<group>"; };
+		B8CF83FE1B61321D00D277A1 /* StatusBarHiddenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarHiddenViewController.h; sourceTree = "<group>"; };
+		B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarHiddenViewController.m; sourceTree = "<group>"; };
+		B8CF84011B6135A200D277A1 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		B8CF84021B6135A200D277A1 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		DC15A4F0193F710800D293CE /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		DC15A4F1193F710800D293CE /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		DCAD9950193F6E7300F0F385 /* ZFModalTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFModalTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +136,16 @@
 				DCAD9965193F6E7300F0F385 /* Main.storyboard */,
 				DCAD9968193F6E7300F0F385 /* ViewController.h */,
 				DCAD9969193F6E7300F0F385 /* ViewController.m */,
+				B8CF83F81B6118E600D277A1 /* TableViewController.h */,
+				B8CF83F91B6118E600D277A1 /* TableViewController.m */,
+				B8CF83FE1B61321D00D277A1 /* StatusBarHiddenViewController.h */,
+				B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */,
 				DC15A4F0193F710800D293CE /* ModalViewController.h */,
 				DC15A4F1193F710800D293CE /* ModalViewController.m */,
+				B8CF83FB1B612DC100D277A1 /* ModalTableViewController.h */,
+				B8CF83FC1B612DC100D277A1 /* ModalTableViewController.m */,
+				B8CF84011B6135A200D277A1 /* NavigationController.h */,
+				B8CF84021B6135A200D277A1 /* NavigationController.m */,
 				DCAD996B193F6E7300F0F385 /* Images.xcassets */,
 				DCAD995A193F6E7300F0F385 /* Supporting Files */,
 			);
@@ -269,8 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD996A193F6E7300F0F385 /* ViewController.m in Sources */,
+				B8CF83FA1B6118E600D277A1 /* TableViewController.m in Sources */,
 				DCAD998C193F6EEF00F0F385 /* ZFModalTransitionAnimator.m in Sources */,
+				B8CF84031B6135A200D277A1 /* NavigationController.m in Sources */,
+				B8CF84001B61321D00D277A1 /* StatusBarHiddenViewController.m in Sources */,
 				DC15A4F2193F710800D293CE /* ModalViewController.m in Sources */,
+				B8CF83FD1B612DC100D277A1 /* ModalTableViewController.m in Sources */,
 				DCAD9964193F6E7300F0F385 /* AppDelegate.m in Sources */,
 				DCAD9960193F6E7300F0F385 /* main.m in Sources */,
 			);
