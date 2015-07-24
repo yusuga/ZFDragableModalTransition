@@ -191,6 +191,8 @@
                                  [toViewController endAppearanceTransition];
                              }
                              [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+                            
+                             [toViewController setNeedsStatusBarAppearanceUpdate];
                          }];
     }
 }
@@ -371,6 +373,8 @@
                              [toViewController endAppearanceTransition];
                          }
                          [transitionContext completeTransition:YES];
+                         
+                         [toViewController setNeedsStatusBarAppearanceUpdate];
                      }];
 }
 
@@ -398,6 +402,8 @@
                          if (fromViewController.modalPresentationStyle == UIModalPresentationFullScreen) {
                              [toViewController.view removeFromSuperview];
                          }
+                         
+                         [fromViewController setNeedsStatusBarAppearanceUpdate];
                      }];
 }
 
