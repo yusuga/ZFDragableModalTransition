@@ -31,4 +31,6 @@ typedef NS_ENUM(NSUInteger, ZFModalTransitonDirection) {
 - (id)initWithModalViewController:(UIViewController *)modalViewController;
 - (void)setContentScrollView:(UIScrollView *)scrollView;
 
++ (instancetype)ys_iOSModalAnimatorWithModalViewController:(UIViewController *)modalViewController;
+
 @end

@@ -478,6 +478,30 @@
     }
 }
 
+#pragma mark - 
+
++ (instancetype)ys_iOSModalAnimatorWithModalViewController:(UIViewController *)modalViewController
+{
+    ZFModalTransitionAnimator *animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalViewController];
+    
+    UIViewController *topVC = [modalViewController isKindOfClass:[UINavigationController class]] ? ((UINavigationController *)modalViewController).topViewController : modalViewController;
+    if ([topVC.view isKindOfClass:[UIScrollView class]]) {
+        [animator setContentScrollView:(id)topVC.view];
+    }
+    
+    animator.dragable = YES;
+    animator.bounces = NO;
+    animator.behindViewAlpha = 1.;
+    animator.behindViewScale = 1.;
+    animator.transitionDuration = 0.6;
+    animator.direction = ZFModalTransitonDirectionBottom;
+    
+    modalViewController.transitioningDelegate = animator;
+    modalViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    return animator;
+}
+
 @end
 
 // Gesture Class Implement
