@@ -6,12 +6,12 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ZFDragableModalTransition"
-  s.version          = "0.5.1"
+  s.version          = "0.5.1.1-yusuga"
   s.summary          = "Custom animation transition for present modal view controller"
   s.homepage         = "https://github.com/zoonooz/ZFDragableModalTransition"
   s.license          = 'MIT'
   s.author           = { "Amornchai Kanokpullwad" => "amornchai.zoon@gmail.com" }
-  s.source           = { :git => "https://github.com/zoonooz/ZFDragableModalTransition.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yusuga/ZFDragableModalTransition.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.1'
   s.ios.deployment_target = '7.1'
