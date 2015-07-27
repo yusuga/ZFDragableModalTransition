@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D13F6FEADF6CA231D84ACC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F880B9C958D35D198A8B69B /* libPods.a */; };
 		B8CF83FA1B6118E600D277A1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83F91B6118E600D277A1 /* TableViewController.m */; };
 		B8CF83FD1B612DC100D277A1 /* ModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83FC1B612DC100D277A1 /* ModalTableViewController.m */; };
 		B8CF84001B61321D00D277A1 /* StatusBarHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */; };
 		B8CF84031B6135A200D277A1 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF84021B6135A200D277A1 /* NavigationController.m */; };
+		B8CF84131B61FB0800D277A1 /* StatusBarShownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF84121B61FB0800D277A1 /* StatusBarShownViewController.m */; };
 		DC15A4F2193F710800D293CE /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC15A4F1193F710800D293CE /* ModalViewController.m */; };
 		DCAD9954193F6E7300F0F385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAD9953193F6E7300F0F385 /* Foundation.framework */; };
 		DCAD9956193F6E7300F0F385 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAD9955193F6E7300F0F385 /* CoreGraphics.framework */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2923C7E1DA3AE7E3562334C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2F880B9C958D35D198A8B69B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A20664C0AA456B4A72662F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B8CF83F81B6118E600D277A1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B8CF83F91B6118E600D277A1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B8CF83FB1B612DC100D277A1 /* ModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTableViewController.h; sourceTree = "<group>"; };
@@ -48,6 +53,8 @@
 		B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarHiddenViewController.m; sourceTree = "<group>"; };
 		B8CF84011B6135A200D277A1 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		B8CF84021B6135A200D277A1 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		B8CF84111B61FB0800D277A1 /* StatusBarShownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarShownViewController.h; sourceTree = "<group>"; };
+		B8CF84121B61FB0800D277A1 /* StatusBarShownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarShownViewController.m; sourceTree = "<group>"; };
 		DC15A4F0193F710800D293CE /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		DC15A4F1193F710800D293CE /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		DCAD9950193F6E7300F0F385 /* ZFModalTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFModalTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +88,7 @@
 				DCAD9956193F6E7300F0F385 /* CoreGraphics.framework in Frameworks */,
 				DCAD9958193F6E7300F0F385 /* UIKit.framework in Frameworks */,
 				DCAD9954193F6E7300F0F385 /* Foundation.framework in Frameworks */,
+				1D13F6FEADF6CA231D84ACC0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		255D8150F58826670CA7E703 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0A20664C0AA456B4A72662F /* Pods.debug.xcconfig */,
+				2923C7E1DA3AE7E3562334C7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCAD9947193F6E7200F0F385 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +121,7 @@
 				DCAD9978193F6E7300F0F385 /* ZFModalTransitionDemoTests */,
 				DCAD9952193F6E7300F0F385 /* Frameworks */,
 				DCAD9951193F6E7300F0F385 /* Products */,
+				255D8150F58826670CA7E703 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +141,7 @@
 				DCAD9955193F6E7300F0F385 /* CoreGraphics.framework */,
 				DCAD9957193F6E7300F0F385 /* UIKit.framework */,
 				DCAD9972193F6E7300F0F385 /* XCTest.framework */,
+				2F880B9C958D35D198A8B69B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +159,8 @@
 				B8CF83F91B6118E600D277A1 /* TableViewController.m */,
 				B8CF83FE1B61321D00D277A1 /* StatusBarHiddenViewController.h */,
 				B8CF83FF1B61321D00D277A1 /* StatusBarHiddenViewController.m */,
+				B8CF84111B61FB0800D277A1 /* StatusBarShownViewController.h */,
+				B8CF84121B61FB0800D277A1 /* StatusBarShownViewController.m */,
 				DC15A4F0193F710800D293CE /* ModalViewController.h */,
 				DC15A4F1193F710800D293CE /* ModalViewController.m */,
 				B8CF83FB1B612DC100D277A1 /* ModalTableViewController.h */,
@@ -198,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAD9982193F6E7300F0F385 /* Build configuration list for PBXNativeTarget "ZFModalTransitionDemo" */;
 			buildPhases = (
+				E543E84A5563FA4A1447A889 /* Check Pods Manifest.lock */,
 				DCAD994C193F6E7300F0F385 /* Sources */,
 				DCAD994D193F6E7300F0F385 /* Frameworks */,
 				DCAD994E193F6E7300F0F385 /* Resources */,
+				19FA7B895D92F288BD894F4F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +306,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19FA7B895D92F288BD894F4F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E543E84A5563FA4A1447A889 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCAD994C193F6E7300F0F385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,6 +352,7 @@
 				DC15A4F2193F710800D293CE /* ModalViewController.m in Sources */,
 				B8CF83FD1B612DC100D277A1 /* ModalTableViewController.m in Sources */,
 				DCAD9964193F6E7300F0F385 /* AppDelegate.m in Sources */,
+				B8CF84131B61FB0800D277A1 /* StatusBarShownViewController.m in Sources */,
 				DCAD9960193F6E7300F0F385 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +475,7 @@
 		};
 		DCAD9983193F6E7300F0F385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A20664C0AA456B4A72662F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -431,6 +489,7 @@
 		};
 		DCAD9984193F6E7300F0F385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2923C7E1DA3AE7E3562334C7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

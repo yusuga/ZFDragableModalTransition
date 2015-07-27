@@ -238,11 +238,46 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="83g-1m-vB6"/>
                         <segue destination="oHI-Tk-2fS" kind="relationship" relationship="viewControllers" id="unW-or-uWp"/>
                         <segue destination="d3P-gF-O0q" kind="relationship" relationship="viewControllers" id="nxM-UX-KqS"/>
+                        <segue destination="woa-2T-HFO" kind="relationship" relationship="viewControllers" id="s0f-AM-H60"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APx-iz-zRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.25" y="429.92957746478868"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="rv4-Ss-UEH">
+            <objects>
+                <viewController id="woa-2T-HFO" customClass="StatusBarShownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="szW-FU-Cfb"/>
+                        <viewControllerLayoutGuide type="bottom" id="174-t6-QP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fv-KV-1vP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pq-j9-kxI">
+                                <rect key="frame" x="279" y="285" width="43" height="30"/>
+                                <state key="normal" title="Modal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3hg-Ly-evY" kind="presentation" id="9wq-KX-rpI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6Pq-j9-kxI" secondAttribute="centerY" id="B06-B2-76y"/>
+                            <constraint firstAttribute="centerX" secondItem="6Pq-j9-kxI" secondAttribute="centerX" id="JtK-Bm-dZu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="J9U-bP-ScR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezI-Np-gOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311" y="2036"/>
         </scene>
         <!--Item-->
         <scene sceneID="wL2-fl-Gck">
@@ -301,10 +336,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="gKV-bh-zXK" id="gDQ-Db-5QY"/>
                         <segue destination="rtD-hn-u15" kind="relationship" relationship="rootViewController" id="hwh-28-FpL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJW-fd-Qcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="gKV-bh-zXK" customClass="SloppySwiper">
+                    <connections>
+                        <outlet property="navigationController" destination="oHI-Tk-2fS" id="bh7-Re-fP0"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1821" y="1219"/>
         </scene>
@@ -319,10 +360,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="Ez0-5g-QPU" id="5U6-hu-8Cm"/>
                         <segue destination="GCB-0C-1qN" kind="relationship" relationship="rootViewController" id="crv-L3-TkA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADe-JM-GZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Ez0-5g-QPU" customClass="SloppySwiper">
+                    <connections>
+                        <outlet property="navigationController" destination="3hg-Ly-evY" id="Z0h-h3-hA1"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="3311" y="1219"/>
         </scene>
@@ -732,7 +779,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="24K-XJ-Vch"/>
-        <segue reference="2v3-WA-LUw"/>
+        <segue reference="nxM-UX-KqS"/>
+        <segue reference="9wq-KX-rpI"/>
     </inferredMetricsTieBreakers>
 </document>
