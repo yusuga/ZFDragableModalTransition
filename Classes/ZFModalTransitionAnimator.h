@@ -30,6 +30,7 @@ typedef NS_ENUM(NSUInteger, ZFModalTransitonDirection) {
 
 - (id)initWithModalViewController:(UIViewController *)modalViewController;
 - (void)setContentScrollView:(UIScrollView *)scrollView;
+@property (nonatomic, strong, readonly) ZFDetectScrollViewEndGestureRecognizer *gesture;
 
 + (instancetype)ys_iOSModalAnimatorWithModalViewController:(UIViewController *)modalViewController;
 

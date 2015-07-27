@@ -9,7 +9,7 @@
 
 @interface ZFModalTransitionAnimator ()
 @property (nonatomic, weak) UIViewController *modalController;
-@property (nonatomic, strong) ZFDetectScrollViewEndGestureRecognizer *gesture;
+@property (nonatomic, strong, readwrite) ZFDetectScrollViewEndGestureRecognizer *gesture;
 @property (nonatomic, strong) id<UIViewControllerContextTransitioning> transitionContext;
 @property CGFloat panLocationStart;
 @property BOOL isDismiss;
