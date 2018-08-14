@@ -1,16 +1,16 @@
 PODS:
-  - LTNavigationBar (2.0.3)
-  - SloppySwiper (0.4.1.5-yusuga):
+  - LTNavigationBar (2.1.0)
+  - SloppySwiper (0.4.1.7-yusuga):
     - LTNavigationBar
     - UIColor-CrossFade
   - UIColor-CrossFade (1.1.0)
 
 DEPENDENCIES:
-  - SloppySwiper (= 0.4.1.5-yusuga)
+  - SloppySwiper (= 0.4.1.7-yusuga)
 
 SPEC CHECKSUMS:
-  LTNavigationBar: 28903730dc6babd80059c391ce095ac179ce454d
-  SloppySwiper: 4a1c21077e50aa755e696f62d079729ed559d603
+  LTNavigationBar: 8d2373e61ac08c16b6235c0450051541941f1fec
+  SloppySwiper: a6f64eb7597f13196a4a81bad0257d6ce4d6f711
   UIColor-CrossFade: 1e0dd1329ae45c6298f2b6b10d2bffc1e5af5d20
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0

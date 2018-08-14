@@ -1,2 +1,5 @@
+source 'https://github.com/yusuga/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git' 
+
 platform :ios, '7.1'
-pod 'SloppySwiper', '0.4.1.5-yusuga'
+pod 'SloppySwiper', '0.4.1.7-yusuga'
