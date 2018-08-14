@@ -537,7 +537,15 @@
     }
 
     CGFloat topVerticalOffset = -self.scrollview.contentInset.top;
-
+    
+    // @available is for Xcode 9+. Can remove this if statement if not using
+    // Xcode 9+.
+    if (@available(iOS 11, *)) {
+        if ([self.scrollview respondsToSelector:@selector(safeAreaInsets)]) {
+            topVerticalOffset -= self.scrollview.safeAreaInsets.top;
+        }
+    }
+    
     if (nowPoint.y > prevPoint.y && self.scrollview.contentOffset.y <= topVerticalOffset) {
         self.isFail = @NO;
     } else if (self.scrollview.contentOffset.y >= topVerticalOffset) {
